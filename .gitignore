@@ -1,0 +1,79 @@
+# ---- 本地暂存/上传中间产物（不进仓库）----
+_github_upload/
+.gh_blob_cache.json
+.gh_shard*.json
+
+# ---- 手机 App 安装包（39MB，放 Release 更合适）----
+tools/手机App/
+tools/android-remote/build/
+
+# ---- 厂商套件里的二进制工具与视频（源码保留）----
+_gimbal_src/**/*.exe
+_gimbal_src/**/*.dll
+_gimbal_src/**/*.mp4
+_gimbal_src/**/*.avi
+_gimbal_src/**/*.apk
+_gimbal_src/**/4.相关工具/**
+_gimbal_src/**/2.视频教程/**
+
+# ---- Keil 编译产物 ----
+firmware/**/Objects/
+firmware/**/Listings/
+firmware/**/DebugConfig/
+firmware/**/RTE/
+firmware/**/*.o
+firmware/**/*.d
+firmware/**/*.crf
+firmware/**/*.dep
+firmware/**/*.lnp
+firmware/**/*.axf
+firmware/**/*.map
+firmware/**/*.lst
+firmware/**/*.htm
+firmware/**/*.iex
+firmware/**/*.bak
+firmware/**/*.uvguix.*
+firmware/**/*.scvd
+firmware/**/*.build_log.htm
+
+# ---- 主机测试编译出来的 exe ----
+firmware/**/tests/*.exe
+tests/*.exe
+
+# ---- 编辑器 / 系统 ----
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
+
+# 保留 Keil 工程文件本身
+!firmware/**/*.uvprojx
+# 本机 Keil 用户配置及历史工程构建产物
+_github_upload/
+_gimbal_src/**/Output/
+_gimbal_src/**/Listing/
+_gimbal_src/**/Objects/
+_gimbal_src/**/DebugConfig/
+_gimbal_src/**/RTE/
+_gimbal_src/**/*.uvoptx
+_gimbal_src/**/*.uvguix*
+_gimbal_src/**/*.o
+_gimbal_src/**/*.d
+_gimbal_src/**/*.crf
+_gimbal_src/**/*.axf
+_gimbal_src/**/*.map
+_gimbal_src/**/*.lst
+_gimbal_src/**/*.htm
+_gimbal_src/**/*.iex
+_gimbal_src/**/*.dep
+_gimbal_src/**/*.lnp
+_gimbal_src/**/*.scvd
+_gimbal_src/**/*.bak
+_gimbal_src/**/resource/resource.c
+.gh_*.json
+# 隧道日志
+_tunnel.log
+_tunnel.err

@@ -1,0 +1,15 @@
+#ifndef __BLUETOOTH_H
+#define __BLUETOOTH_H
+
+#include "main.h"
+
+/* ??????? */
+void Bluetooth_Init(void);
+
+/* ???? */
+void Bluetooth_Task(void);
+
+/* ??????????? */
+uint8_t Bluetooth_GetCommand(void);
+
+#endif
